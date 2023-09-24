@@ -1,0 +1,42 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    padding: 50px;
+  }
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #b3b1b1;
+    border-radius: 5px;
+    flex: 1;
+    background-color: #EEEEEE;
+  }
+  
+  .dashboard-chart {
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  h2{
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+  }
+  h3{
+    font-size: 16px;
+    font-weight: normal;
+  }
