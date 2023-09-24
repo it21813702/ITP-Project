@@ -14,6 +14,7 @@ import Products from './components/Product/Products';
 import ProductDetail from './components/Product/ProductDetail';
 import Sidebar from './components/Sidebar'
 import Dashboard from './components/Dashboard'
+import Reports from './components/Reports';
 //import help from './components/Help'
 /** Auth middleware */
 import { AuthorizeUser, ProtectRoute } from './middleware/auth';
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
   {
     path:'products/:id',
     element:<ProductDetail></ProductDetail>
+  },
+  {
+    path:'/reports',
+    element:<Reports></Reports>
   }
 ]);
 
