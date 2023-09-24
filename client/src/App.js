@@ -93,7 +93,7 @@ function App() {
               <Sidebar>
                 <Route path="/" element={<Username />} exact />
                 <Route path="/add" element={<AddProduct />} exact />
-                <Route path="/products" element={<Products />} exact />
+                <Route path="/product" element={<Products />} exact />
                 <Route path="/products/:id" element={<ProductDetail />} exact />
                 <Route path="/profile" element={<Profile />} exact />
               </Sidebar>

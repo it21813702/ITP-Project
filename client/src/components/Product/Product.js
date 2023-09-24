@@ -68,16 +68,17 @@ const Product = (props) => {
       <Rating name={`rating-${_id}`} value={4.5} readOnly />
       <span>12 Reviews</span>
 </div>  */}
-
-    
-    <h2>{name}</h2>
-    <p>{description}</p>
-    <p>Category: {categoryName}</p>
-    <p>Materials: {materials}</p>
-    <p>Available Stock: {stock}</p>
-    <p>Dimensions: {height} x {width} x {depth} cm</p>
-    <h2>Rs {price}</h2>
-    
+<ul>
+    <li>
+    <h1 className='title'>{name}</h1>
+    <p className='p'>{description}</p>
+    <p className='p'>Category: {categoryName}</p>
+    <p className='p'>Materials: {materials}</p>
+    <p className='p'>Available Stock: {stock}</p>
+    <p className='p'>Dimensions: {height} x {width} x {depth} cm</p>
+    <h2 className='h2'>Rs.{price}.00</h2>
+   </li> 
+   </ul>
     <Button LinkComponent={Link} to={`/products/${_id}`}>
       Update
     </Button>
@@ -93,7 +94,8 @@ const Product = (props) => {
         <Button onClick={closeZoom}>Close</Button>
       </Paper>
     </Modal>
-  </div></CommonLayout>
+  </div>
+  </CommonLayout>
   );
 };
 

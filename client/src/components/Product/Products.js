@@ -4,7 +4,6 @@ import Product from './Product';
 import "./Product.css"
 const URL = "http://localhost:8080/products/";
 
-
 const fetchHandler = async()=>{
 
    return await axios.get(URL).then((res)=>res.data)
